@@ -1,0 +1,14 @@
+/* 导航页面 */
+
+.nav {
+    text-align: center;
+}
+
+.nav>.link {
+    background-color: rgb(3, 143, 143);
+    color: white;
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<div ng-init='initMethod()'>
+
+    <!-- 单向绑定 -->
+    {{value1}}
+    <span ng-bind='value1'></span>
+    <input type="text" ng-value='value1'>
+
+    <br />
+
+    <!-- 双向绑定 -->
+    <input type="text" ng-model='value1'>
+
+    <!-- 列表渲染 -->
+    <ul>
+        <li ng-repeat='item in value2'>{{item}}</li>
+    </ul>
+
+    <!-- 条件渲染 -->
+    <div ng-if='value3'>
+        [if]看见我了吗？
+    </div>
+    <div ng-show='!value3'>
+        [show]看见我了吗？
+    </div>
+
+    <!-- 事件绑定 -->
+    <span ng-click='doit1()'>点击click</span>
+
+</div>
