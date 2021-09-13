@@ -23,6 +23,9 @@
         /* 过滤器 */
         'libs/modules/filters/basicFlt.js', // 自定义过滤器最基本的例子
 
+        /* 服务 */
+        'libs/modules/services/$factoryBasic.js', // 自定义服务之factory
+
     ];
 
     if (typeof (exports) != "undefined") {

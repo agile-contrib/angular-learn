@@ -88,6 +88,14 @@ startapp.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
                 delay: startapp.asyncjs('htmls/filter/mod.js')
             },
             controller: "FilterController"
+        })
+        .state("Service", {
+            url: "/Service",
+            templateUrl: addToken("htmls/service/mod.html"),
+            resolve: {
+                delay: startapp.asyncjs('htmls/service/mod.js')
+            },
+            controller: "ServiceController"
         });
 
     $urlRouterProvider.otherwise("/Index");
