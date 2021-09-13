@@ -80,6 +80,14 @@ startapp.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
                 delay: startapp.asyncjs('htmls/directive/mod.js')
             },
             controller: "DirectiveController"
+        })
+        .state("Filter", {
+            url: "/Filter",
+            templateUrl: addToken("htmls/filter/mod.html"),
+            resolve: {
+                delay: startapp.asyncjs('htmls/filter/mod.js')
+            },
+            controller: "FilterController"
         });
 
     $urlRouterProvider.otherwise("/Index");

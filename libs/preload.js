@@ -5,7 +5,7 @@
     var cssFiles = [
         'styles/normalize.css', // 兼容样式
         'styles/common.css', // 公共样式
-        'styles/style.css' // 公共样式
+        'styles/style.css' // 样式文件
     ];
     var jsFiles = [
 
@@ -19,6 +19,9 @@
 
         /* 指令 */
         'libs/modules/directives/ui-basic.js',// 自定义指令最基本的例子
+
+        /* 过滤器 */
+        'libs/modules/filters/basicFlt.js', // 自定义过滤器最基本的例子
 
     ];
 
