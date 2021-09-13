@@ -72,6 +72,14 @@ startapp.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
                 delay: startapp.asyncjs('htmls/basic/mod.js')
             },
             controller: "BasicController"
+        })
+        .state("Directive", {
+            url: "/Directive",
+            templateUrl: addToken("htmls/directive/mod.html"),
+            resolve: {
+                delay: startapp.asyncjs('htmls/directive/mod.js')
+            },
+            controller: "DirectiveController"
         });
 
     $urlRouterProvider.otherwise("/Index");
