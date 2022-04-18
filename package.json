@@ -4,15 +4,15 @@
   "description": "Angular.js学习代码笔记 ",
   "scripts": {
     "start": "npm install && npm run dev",
-    "clean": "hai2007_nodejs -d build",
-    "dev": "./node_modules/.bin/grunt",
+    "clean": "nodejs -d build",
+    "dev": "grunt",
     "build": "npm run clean && npm run prod",
-    "prod": "node_modules/.bin/grunt prod"
+    "prod": "grunt prod"
   },
   "author": "你好2007",
   "license": "MIT",
   "devDependencies": {
-    "@hai2007/nodejs": "^0.1.0",
+    "@hai2007/nodejs": "^3.0.1",
     "autoprefixer": "^7.2.5",
     "grunt": "^1.0.4",
     "grunt-contrib-concat": "^1.0.1",

@@ -1,4 +1,7 @@
+
 (function (window, angular, undefined) {
+
+    "use strict";
 
     angular.module("ui.libraries").filter('basicFlt', function () {
 
